@@ -2,65 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Happy Raj — Portfolio</title>
-  <meta name="description" content="Portfolio of YOUR NAME — projects, skills and contact." />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta name="description" content="Happy Raj — Software Developer. Explore projects, skills and contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#0f172a;
+      --bg2:#071029;
+      --card:#0b1220;
+      --accent:#6ee7b7;
+      --muted:#94a3b8;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:#e6eef8}
+    .container{max-width:1100px;margin:36px auto;padding:28px}
+    .grid{display:grid;grid-template-columns:360px 1fr;gap:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.08);backdrop-filter: blur(10px);border-radius:16px;padding:28px;box-shadow:0 10px 24px rgba(0,0,0,0.25)}
+
+    .avatar{width:110px;height:110px;border-radius:20px;display:inline-grid;place-items:center;font-weight:800;font-size:30px;background:linear-gradient(135deg,var(--accent),#60a5fa);color:#042024;box-shadow:0 6px 16px rgba(0,0,0,0.25)}
+    h1{margin:6px 0 0;font-size:26px}
+    .subtitle{color:var(--muted);margin-top:6px;font-size:15px}
+    .bio{margin-top:18px;line-height:1.6;color:#d9eafc;font-size:15px}
+
+    .cta{display:flex;gap:14px;margin-top:22px}
+    .btn{padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:600;border:1px solid rgba(255,255,255,0.06);display:inline-flex;align-items:center;gap:8px;transition:all 0.25s ease}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(0,0,0,0.2)}
+    .btn-primary{background:linear-gradient(90deg,#10b981,#60a5fa);color:#022}
+    .btn-ghost{background:transparent;color:var(--accent)}
+
+    .hero-banner{display:flex;justify-content:space-between;align-items:flex-start;gap:22px}
+    .headline{font-size:30px;margin:0;font-weight:800}
+    .lead{color:var(--muted);margin-top:8px;font-size:15px}
+
+    .projects{margin-top:20px;display:grid;gap:16px}
+    .project{display:flex;flex-direction:column;padding:16px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));border:1px solid rgba(255,255,255,0.05);transition:all 0.25s ease}
+    .project:hover{transform:translateY(-4px);box-shadow:0 6px 14px rgba(0,0,0,0.25)}
+    .project .meta{display:flex;justify-content:space-between;align-items:center}
+    .project h3{margin:0;font-size:18px}
+    .project p{margin:8px 0 0;color:var(--muted);font-size:14px}
+
+    .contact{display:flex;gap:12px;align-items:center;margin-top:12px}
+    .contact a{color:var(--accent);text-decoration:none;font-weight:700}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:900px){.grid{grid-template-columns:1fr}.avatar{width:92px;height:92px}}
+
+    .bg-orb{position:fixed;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle at 30% 30%, rgba(96,165,250,0.18), rgba(59,130,246,0.04));filter:blur(40px);pointer-events:none;animation:float 8s ease-in-out infinite}
+    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-10px)}100%{transform:translateY(0)}}
+
+    .github-link{display:inline-flex;align-items:center;gap:8px}
+    .github-icon{width:18px;height:18px;display:inline-block}
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand">Happy Raj</h1>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <div class="bg-orb"></div>
+  <main class="container">
+    <div class="grid">
+      <aside class="card">
+        <div style="display:flex;align-items:center;gap:16px">
+          <div class="avatar">HR</div>
+          <div>
+            <h1>Happy Raj</h1>
+            <div class="subtitle">Software Developer • Open-source Enthusiast</div>
+          </div>
+        </div>
+
+        <p class="bio">I build clean, maintainable software with attention to performance and developer experience. My focus is on pragmatic solutions and shipping code that solves real-world problems.</p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="https://github.com/CoderInWaves" target="_blank" rel="noopener noreferrer">
+            <svg class="github-icon" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.66 7.66 0 018 4.6c.68.003 1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            View GitHub
+          </a>
+
+          <a class="btn btn-ghost" href="mailto:nofiyasolution777@gmail.com">Contact</a>
+        </div>
+
+        <div style="margin-top:22px">
+          <strong style="color:#cfe8ff">Contact</strong>
+          <div class="contact">
+            <a href="mailto:nofiyasolution777@gmail.com">nofiyasolution777@gmail.com</a>
+          </div>
+        </div>
+
+      </aside>
+
+      <section>
+        <div class="card hero-banner">
+          <div>
+            <h2 class="headline">Hi — I'm Happy Raj.</h2>
+            <p class="lead">I design and implement pragmatic software — from data pipelines and APIs to polished frontend experiences. Below are selected projects and links to my work.</p>
+
+            <div class="projects">
+              <article class="project">
+                <div class="meta">
+                  <h3>Open-source contributions & projects</h3>
+                  <div class="github-link"><a href="https://github.com/CoderInWaves" target="_blank">GitHub profile →</a></div>
+                </div>
+                <p>Explore repositories for backend services, developer tools and experiment repos. Use the GitHub link above to see code, README details and live demos (where available).</p>
+              </article>
+            </div>
+          </div>
+
+          <div style="min-width:240px;max-width:260px;text-align:center">
+            <div style="padding:16px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));box-shadow:0 6px 14px rgba(0,0,0,0.25)"> 
+              <div style="font-size:14px;color:var(--muted)">Available for</div>
+              <div style="font-weight:800;font-size:22px;margin-top:6px">Freelance & Collaboration</div>
+              <div style="margin-top:12px;color:var(--muted);font-size:13px">Open to short-term contracts and early-stage startup roles.</div>
+
+              <div style="margin-top:16px;display:flex;justify-content:center">
+                <a class="btn btn-primary" href="mailto:nofiyasolution777@gmail.com">Hire / Contact</a>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top:16px;padding:14px;text-align:left;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015))">
+              <div style="font-size:12px;color:var(--muted)">Quick links</div>
+              <div style="margin-top:8px;display:flex;flex-direction:column;gap:8px">
+                <a href="https://github.com/CoderInWaves" target="_blank">• GitHub: CoderInWaves</a>
+                <a href="mailto:nofiyasolution777@gmail.com">• Email: nofiyasolution777@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          © <span id="year"></span> Happy Raj — Built with care • <a href="https://github.com/CoderInWaves" target="_blank" style="color:var(--accent);text-decoration:none">@CoderInWaves</a>
+        </footer>
+      </section>
+
     </div>
-  </header>
-
-  <main>
-    <section class="hero container">
-      <div>
-        <h2>Short professional tagline</h2>
-        <p>Concise summary: what you build, who you help, and why you’re different.</p>
-        <p><a class="btn" href="#projects">View Projects</a></p>
-      </div>
-    </section>
-
-    <section id="projects" class="container projects">
-      <h3>Selected Projects</h3>
-      <div class="grid">
-        <article class="card">
-          <h4>Project A</h4>
-          <p>One-line: problem solved, tech used.</p>
-          <p><a href="https://github.com/your-username/project-a" target="_blank">Repo / Live</a></p>
-        </article>
-        <article class="card">
-          <h4>Project B</h4>
-          <p>One-line: problem solved, tech used.</p>
-          <p><a href="https://your-username.github.io/project-b" target="_blank">Live demo</a></p>
-        </article>
-        <!-- Add more project cards -->
-      </div>
-    </section>
-
-    <section id="about" class="container about">
-      <h3>About</h3>
-      <p>Brief professional bio, top skills and a downloadable CV link.</p>
-    </section>
-
-    <section id="contact" class="container contact">
-      <h3>Contact</h3>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>LinkedIn · GitHub · Other</p>
-    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© YEAR YOUR NAME — Built with GitHub Pages</small>
-    </div>
-  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
