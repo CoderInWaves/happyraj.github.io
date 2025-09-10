@@ -28,9 +28,9 @@ html, body {
 }
 
 .avatar-img {
-  width: 110px;
-  height: 110px;
-  border-radius: 20px;   /* Rounded edges */
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;   /* Rounded edges */
   object-fit: cover;     /* Keeps photo proportional */
   box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
