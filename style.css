@@ -28,8 +28,8 @@ html, body {
 }
 
 .avatar-img {
-  width: 120px;   /* adjust size */
-  height: 120px;
+  width: 160px;   /* adjust size */
+  height: 160px;
   border-radius: 50%;   /* circular */
   object-fit: cover;    /* crops image properly */
   box-shadow: 0 6px 16px rgba(0,0,0,0.25);
