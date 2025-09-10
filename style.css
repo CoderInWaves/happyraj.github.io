@@ -1,0 +1,111 @@
+:root {
+  --bg1: #0f172a;
+  --bg2: #071029;
+  --card: #0b1220;
+  --accent: #6ee7b7;
+  --muted: #94a3b8;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  color: #e6eef8;
+}
+
+.container { max-width: 1100px; margin: 36px auto; padding: 28px; }
+.grid { display: grid; grid-template-columns: 360px 1fr; gap: 28px; }
+
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 20px;
+  display: inline-grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 30px;
+  background: linear-gradient(135deg, var(--accent), #60a5fa);
+  color: #042024;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+h1 { margin: 6px 0 0; font-size: 26px; }
+.subtitle { color: var(--muted); margin-top: 6px; font-size: 15px; }
+.bio { margin-top: 18px; line-height: 1.6; color: #d9eafc; font-size: 15px; }
+
+.cta { display: flex; gap: 14px; margin-top: 22px; }
+.btn {
+  padding: 12px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.06);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+}
+.btn:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,0.2); }
+.btn-primary { background: linear-gradient(90deg,#10b981,#60a5fa); color: #022; }
+.btn-ghost { background: transparent; color: var(--accent); }
+
+.hero-banner { display: flex; justify-content: space-between; align-items: flex-start; gap: 22px; }
+.headline { font-size: 30px; margin: 0; font-weight: 800; }
+.lead { color: var(--muted); margin-top: 8px; font-size: 15px; }
+
+.projects { margin-top: 20px; display: grid; gap: 16px; }
+.project {
+  display: flex; flex-direction: column; padding: 16px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.25s ease;
+}
+.project:hover { transform: translateY(-4px); box-shadow: 0 6px 14px rgba(0,0,0,0.25); }
+.project h3 { margin: 0; font-size: 18px; }
+.project p { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+
+.contact { display: flex; gap: 12px; align-items: center; margin-top: 12px; }
+.contact a { color: var(--accent); text-decoration: none; font-weight: 700; }
+
+footer { margin-top: 28px; text-align: center; color: var(--muted); font-size: 13px; }
+
+@media (max-width:900px){ .grid{ grid-template-columns:1fr } .avatar{ width:92px; height:92px } }
+
+.bg-orb {
+  position: fixed; right: -120px; top: -120px;
+  width: 420px; height: 420px; border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(96,165,250,0.18), rgba(59,130,246,0.04));
+  filter: blur(40px);
+  pointer-events: none;
+  animation: float 8s ease-in-out infinite;
+}
+@keyframes float { 0%{transform:translateY(0)} 50%{transform:translateY(-10px)} 100%{transform:translateY(0)} }
+
+.github-link { display: inline-flex; align-items: center; gap: 8px; }
+.github-icon { width: 18px; height: 18px; display: inline-block; }
+
+.card-inner {
+  padding: 16px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+.quick-links {
+  margin-top: 16px;
+  padding: 14px;
+  text-align: left;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+}
