@@ -158,7 +158,7 @@ body {
 /* FIX: Add spacing between text and button */
 .card p {
   margin-bottom: 18px;
-  color: #555;
+  color: #222;   /* darker gray for better contrast */
   font-size: 1rem;
   line-height: 1.6;
 }
