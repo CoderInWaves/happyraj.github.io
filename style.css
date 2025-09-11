@@ -112,6 +112,7 @@ body {
   flex: 1;
   padding: 60px;
   background: #fdfdfd;
+  color: #222;
 }
 
 .main-content h2 {
@@ -154,8 +155,16 @@ body {
   color: #222;
 }
 
+/* FIX: Add spacing between text and button */
+.card p {
+  margin-bottom: 18px;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 .card-actions {
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 /* Responsive */
