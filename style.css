@@ -9,7 +9,7 @@
 body {
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #e2e8f0;
+  color: #f1f5f9; /* brighter text */
   line-height: 1.7;
 }
 
@@ -29,7 +29,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .profile img.avatar-img {
@@ -37,7 +37,7 @@ body {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
   margin-bottom: 15px;
   border: 3px solid #fff;
 }
@@ -111,54 +111,52 @@ body {
 .main-content {
   flex: 1;
   padding: 60px;
-  background: #fdfdfd;
-  color: #222;
 }
 
 .main-content h2 {
   font-size: 1.6rem;
   margin-bottom: 14px;
-  color: #004080;
-  border-bottom: 2px solid #e0e6f5;
+  color: #60a5fa; /* accent blue for headings */
+  border-bottom: 2px solid #334155;
   padding-bottom: 6px;
 }
 
 .intro p {
   margin-top: 8px;
   font-size: 1.05rem;
-  color: #444;
+  color: #f1f5f9; /* bright text */
 }
 
+/* Highlighted keywords */
 .highlight {
-  color: #0366d6;
+  color: #22d3ee; /* teal accent */
   font-weight: bold;
 }
 
 /* Cards */
 .card {
-  background: #fff;
-  border: none;
+  background: #1e293b; /* dark slate */
+  border: 1px solid #334155;
   padding: 28px;
   border-radius: 16px;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.4);
   margin-top: 24px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
 }
 
 .card h3 {
   margin-bottom: 12px;
-  color: #222;
+  color: #f8fafc; /* white heading inside card */
 }
 
-/* FIX: Add spacing between text and button */
 .card p {
   margin-bottom: 18px;
-  color: #222;   /* darker gray for better contrast */
+  color: #e2e8f0; /* brighter paragraph text */
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -176,7 +174,7 @@ body {
   .sidebar {
     width: 100%;
     border-right: none;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid #334155;
     box-shadow: none;
   }
 
