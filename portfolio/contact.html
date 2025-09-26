@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Your Name</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Let's discuss your next project or collaboration</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Let's Connect</h2>
+                    <p>I'm always interested in new opportunities, exciting projects, and meaningful collaborations. Whether you have a project in mind or just want to say hello, I'd love to hear from you!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>your.email@example.com</p>
+                                <a href="mailto:your.email@example.com">Send Email</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <a href="tel:+15551234567">Call Now</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Your City, Country</p>
+                                <span>Available for remote work</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h3>Follow Me</h3>
+                        <div class="social-links-large">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <form class="contact-form-detailed" id="contactForm">
+                        <h2>Send Message</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="project">Project Inquiry</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="job">Job Opportunity</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Project Budget (Optional)</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-5k">Under $5,000</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="over-50k">Over $50,000</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or inquiry..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to my newsletter for updates and tech insights
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What services do you offer?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I offer full-stack web development, AI/ML solutions, mobile app development, and technical consulting services.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does a typical project take?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary depending on complexity. Simple websites take 2-4 weeks, while complex applications can take 2-6 months.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you work with international clients?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, I work with clients worldwide and am comfortable with remote collaboration across different time zones.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your development process?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I follow an agile approach: discovery, planning, design, development, testing, and deployment with regular client communication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = question.querySelector('i');
+                
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.classList.replace('fa-plus', 'fa-minus');
+                } else {
+                    answer.style.maxHeight = '0';
+                    icon.classList.replace('fa-minus', 'fa-plus');
+                }
+            });
+        });
+
+        // Enhanced form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('.submit-btn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnIcon = submitBtn.querySelector('i');
+            
+            // Show loading state
+            btnText.textContent = 'Sending...';
+            btnIcon.className = 'fas fa-spinner fa-spin';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                // Show success state
+                btnText.textContent = 'Message Sent!';
+                btnIcon.className = 'fas fa-check';
+                
+                // Reset form
+                this.reset();
+                
+                // Show success message
+                alert('Thank you for your message! I\'ll get back to you within 24 hours.');
+                
+                // Reset button after delay
+                setTimeout(() => {
+                    btnText.textContent = 'Send Message';
+                    btnIcon.className = 'fas fa-paper-plane';
+                    submitBtn.disabled = false;
+                }, 3000);
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
