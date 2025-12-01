@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Raj - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhanced.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/advanced-animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero morphing-bg">
+        <div class="hero-content">
+            <h1 class="hero-title glow-text">Hi, I'm <span class="highlight">Happy Raj</span></h1>
+            <p class="hero-subtitle">Developer & Technology Enthusiast</p>
+            <p class="hero-description">Building impactful software and exploring the future of technology</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary magnetic-btn ripple-effect">View My Work</a>
+                <a href="#contact" class="btn btn-secondary magnetic-btn ripple-effect">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-pic">
+                <img src="images/happy_.png" alt="Happy Raj" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title slide-in-left">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm Happy Raj, a developer passionate about building impactful software and exploring the future of technology. My focus includes AI/ML, backend engineering, and open-source collaboration.</p>
+                    <p>I thrive on creating solutions that make a difference, constantly learning new technologies, and contributing to the open-source community while building innovative projects.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Projects Built</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Technologies</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Dedication</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title bounce-in">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming & Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">C Programming</span>
+                        <span class="skill-item">Next.js</span>
+                        <span class="skill-item">FastAPI</span>
+                        <span class="skill-item">Tailwind CSS</span>
+                        <span class="skill-item">DSA</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI/ML & Data</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">LangChain</span>
+                        <span class="skill-item">RAG Architecture</span>
+                        <span class="skill-item">ChromaDB</span>
+                        <span class="skill-item">Prompt Engineering</span>
+                        <span class="skill-item">Data Analysis</span>
+                        <span class="skill-item">Data Visualization</span>
+                        <span class="skill-item">Data Cleaning</span>
+                        <span class="skill-item">Web Scraping</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Microsoft Azure</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Azure Kubernetes Service</span>
+                        <span class="skill-item">Vercel</span>
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">Linux System Administration</span>
+                        <span class="skill-item">VPS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Other Skills</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">GitHub</span>
+                        <span class="skill-item">Clerks</span>
+                        <span class="skill-item">Graphic Design</span>
+                        <span class="skill-item">Microsoft Office</span>
+                        <span class="skill-item">Remote User Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects animated-bg">
+        <div class="floating-elements"></div>
+        <div class="container">
+            <h2 class="section-title slide-in-right">Featured Projects</h2>
+            <div class="github-showcase">
+                <a href="https://github.com/CoderInWaves?tab=repositories" target="_blank" class="github-link-simple magnetic-btn ripple-effect" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fab fa-github"></i>
+                    <span>View My GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>nofiyasolution777@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Greater Noida, UP, India</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/CoderInWaves" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/happy-raj-63a056248/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Happy Raj. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="particles-js"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/advanced-animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .profile-pic {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .hero {
+        padding: 0 15px;
+        min-height: 90vh;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem !important;
+        line-height: 1.2;
+        color: #ffffff !important;
+        text-shadow: 3px 3px 8px rgba(0,0,0,0.9) !important;
+        background: rgba(0,0,0,0.3);
+        padding: 10px 15px;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+    }
+    
+    .highlight {
+        color: #ffd700 !important;
+        text-shadow: 0 0 15px rgba(255, 215, 0, 0.8) !important;
+        font-weight: 900 !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .about-text p {
+        font-size: 1rem;
+    }
+    
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .stat h3 {
+        font-size: 2rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .skill-category {
+        padding: 1.5rem;
+    }
+    
+    .github-link-simple {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+    
+    .github-link-simple i {
+        font-size: 1.5rem;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem !important;
+        color: #ffffff !important;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.9) !important;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 536px) {
+    .hero {
+        padding-top: 100px;
+        min-height: 100vh;
+    }
+    
+    .hero-title {
+        font-size: 1.6rem !important;
+        margin-top: 20px;
+        margin-bottom: 1.5rem;
+        padding: 15px 10px !important;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .hero-content {
+        padding-top: 20px;
+        gap: 1.5rem;
+    }
+    
+    .navbar {
+        padding: 0.8rem 0;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+    }
+    
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .skill-category {
+        padding: 1rem;
+    }
+    
+    .skill-item {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .github-link-simple {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: 20px 15px;
+    }
+    
+    .hero-content {
+        gap: 1.5rem;
+    }
+    
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
